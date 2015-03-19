@@ -84,6 +84,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void shift(View view) {
         if (!mShifted) {
+            
             for (ImageView imageView : mImageViews) {
                 ObjectAnimator tx = ObjectAnimator.ofFloat(imageView, View.TRANSLATION_X, (mRandom.nextFloat() - 0.5f) * 500);
                 tx.addUpdateListener(listener);
